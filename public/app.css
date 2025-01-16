@@ -1,0 +1,408 @@
+body{ 
+    display: flex;
+     background-color: black;
+     
+ } 
+ 
+ 
+ .main{
+     display: flex;
+     background-color: black;
+     height: 700px;
+}
+
+ #resume{
+   display: flex;
+     background-color: black;
+     height: 700px;
+ }
+ 
+ .b1{
+    background-color:rgb(8, 8, 77);
+     height:700px;   
+     position:relative;
+     top: 15px;
+     width:225px;
+ 
+     
+ }
+ 
+ .b2{
+     background-color: rgb(248, 248, 248);
+     width:30%;
+     height:700px;
+     position:relative;
+     top: 15px;
+     
+ }
+ 
+ h3{
+     text-align: center;
+     color: aliceblue;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+ 
+ 
+  .email{
+     display:flex;
+     justify-content: flex-start;
+     margin-bottom:15px;
+     height:25px;
+  }
+ 
+  .ph{
+     display:flex;
+     justify-content:flex-start;
+     margin-bottom:15px;
+     height:25px;
+  }
+ 
+  .location{
+     display:flex;
+     justify-content: flex-start;
+     margin-bottom:15px;
+     height:25px;
+  }
+ 
+  .ei{
+     color: white;
+     margin:5px;
+  }
+ 
+  .pi{
+     color: white;
+     margin:5px;
+  }
+ 
+  .loi{
+     color: white;
+     margin:5px;
+  }
+ 
+  .des1{
+     color: aliceblue;
+ 
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-size: small;
+     padding:3px;
+     }
+ 
+ .des2{
+       color: aliceblue;
+   
+       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-size: small;
+       padding:3px;
+       }
+ .des3{
+          color: aliceblue;
+      
+          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-size: small;
+          padding:3px;
+          }
+ 
+  .skillset{
+    color: aliceblue;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+ 
+  .softwareset{
+    color: aliceblue;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+ 
+  .name{
+    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(8, 8, 77);
+    position: relative;
+    left: 90px;
+    margin-bottom:0;
+ 
+  
+  }
+ 
+  .name1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(8, 8, 77);
+    position: relative;
+    left: 90px;
+    margin-bottom:0;
+  }
+ 
+  .designation{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(8, 8, 77);
+    position: relative;
+    left:20px;
+    top:20px;
+ }
+ 
+ .description{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(8, 8, 77);
+    position: relative;
+    left:20px;
+    top:10px;
+    font-size: small;
+ }
+ 
+ .perinfo{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:aliceblue;
+    position: relative;
+    left:100px;
+    top:20px;
+    background-color: rgb(8, 8, 77);
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+ }
+ 
+ .perworkex{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:aliceblue;
+    position: relative;
+    left:100px;
+    top:20px;
+    background-color: rgb(8, 8, 77);
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+ }
+ 
+ .peredu{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:aliceblue;
+    position: relative;
+    left:100px;
+    top:20px;
+    background-color: rgb(8, 8, 77);
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+ }
+ 
+ .perpara{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(8, 8, 77);
+    position: relative;
+    left:20px;
+    top:20px;
+    font-size:small;
+ }
+ .interval1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(8, 8, 77);
+    position: relative;
+    left:20px;
+    top:10px;
+    font-size: small;
+ }
+ 
+ .tenthinterval{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(8, 8, 77);
+    position: relative;
+    left:20px;
+    top:10px;
+    font-size: small;
+ }
+ .interval{
+    display: flex;
+ 
+ 
+ }
+ 
+ .vertical-line {
+    width: 1px; /* Adjust the width */
+    height: 700px; /* Adjust the height */
+    /* transform: rotate(90deg); */
+    margin: 0;
+    border: none;
+    background-color: rgb(247, 247, 247);
+    position: relative;
+    left:20px;
+    top:20px;
+    margin:0;
+  }
+ 
+  .header{
+    background-color: aliceblue;
+    height:50px;
+    text-align:center;
+    width: 820px;
+    color:rgb(8, 8, 77);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    padding-top: 25px; 
+    font-size: larger;
+    font-weight:800;
+    position: relative;
+    top:15px
+ }
+ 
+  .data{
+    background-color:rgb(8, 8, 77);
+    height: 700px;
+    width: 820px;
+    position: relative;
+    left:40px;
+    top:10px
+ }
+  
+ .container{
+    position: relative;
+    left:5px;
+    
+ }
+ 
+ .container1{
+    display: flex;
+    align-content: space-between;
+    position: relative;
+    left:80px;
+    margin-right:0;
+    width:700px;
+ }
+  .container2{
+    
+    margin: 10px;
+    position: relative;
+    left:80px;
+    height:75px;
+    width:700px;
+ 
+  }
+ 
+  .imgfile{
+    position:relative;
+    top:30px;
+    left:80px;
+ 
+  }
+ 
+  .desig{
+    position:relative;
+    top:30px;
+    left:80px;
+  }
+ 
+  .data5{
+    position: relative;
+
+    right: 65px;
+ 
+ }
+ 
+ .data6{
+    position: relative;
+    width:290px;
+    right: 35px;
+ }
+
+  
+ 
+  #jobdescription{
+    position: relative;
+    left:13px;
+ 
+   
+  }
+ 
+  #personaldescription{
+    position: relative;
+    left: 50px;
+    right: 100px;
+  }
+ 
+  textarea{
+    height: 100px;
+    width:230px;
+    border-radius: 10px;
+    border:5px solid rgb(4, 64, 117)
+  }
+ 
+ input{
+    
+    border-color: aliceblue;
+    border-radius: 10px;
+    margin: 20px;
+    width:230px;
+    height:20px;
+    border:5px solid rgb(4, 64, 117);
+   
+ }
+ 
+ .footer{
+    background-color: aliceblue;
+    height:50px;
+    width: 820px;
+    color:rgb(8, 8, 77);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    position: relative;
+    top:5px
+ }
+ 
+ #expbtn{
+    height: 20px;
+    width: 85px;
+    position: relative;
+    top:55px;
+    right: 125px;
+    color: rgb(8, 8, 77);
+    font-weight: 300;
+    border:2px solid rgb(4, 64, 117);
+ }
+ 
+ #qualificationbtn{
+    height: 20px;
+    width: px;
+    position: relative;
+    top:55px;
+    right: 185px;
+    color: rgb(8, 8, 77);
+    font-weight: 300;
+    border:2px solid rgb(4, 64, 117)
+ }
+ 
+ #skillbtn{
+    height: 20px;
+    width: 80px;
+    position: relative;
+    top:55px;
+    right: 125px;
+    color: rgb(8, 8, 77);
+    font-weight: 300;
+    border:2px solid rgb(4, 64, 117);
+    
+    
+ }
+ 
+ #softwarebtn{
+    height: 20px;
+    width: 80px;
+    position: relative;
+    top:55px;
+    right: 185px;
+    color: rgb(8, 8, 77);
+    font-weight: 300;
+    border:2px solid rgb(4, 64, 117)
+    
+ }
+ 
+ #finalsubmit{
+    position:relative;
+    top:15px;
+    left:700px;
+    color: rgb(8, 8, 77);
+    font-weight: 300;
+    border:2px solid rgb(4, 64, 117)
+ }
+ 
+ 
+ .int{
+    color: rgb(8, 8, 77);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+ };
+ 
