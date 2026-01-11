@@ -1,0 +1,17 @@
+/* base.css — reset, typography, and base utilities */
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:var(--font-stack);background:var(--bg);color:var(--primary);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+.container-max{max-width:var(--max-width);margin:40px auto;padding:20px}
+
+h1,h2,h3,h4{margin:0}
+p{margin:0}
+
+/* list reset */
+ul{margin:0;padding:0;list-style:none}
+li{margin-bottom:6px}
+
+/* small helpers */
+.center{text-align:center}
+.muted{color:var(--muted)}
+.small{font-size:13px}

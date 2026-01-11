@@ -1,0 +1,24 @@
+/* utilities.css — misc helpers, legacy compatibility and print */
+/* focus and accessibility */
+.input:focus,textarea:focus,select:focus,.btn:focus{outline:3px solid var(--focus);outline-offset:2px}
+
+/* small helpers */
+.center{text-align:center}
+.muted{color:var(--muted)}
+
+/* legacy compatibility overrides */
+.perinfo,.perworkex,.peredu{font-family:inherit;color:#fff;background:var(--primary);padding:10px;border-radius:8px;margin-top:12px;width:100%;text-align:left}
+
+/* footer */
+.footer{background:aliceblue;padding:10px;border-radius:8px;color:var(--primary);width:100%;margin-top:12px}
+
+/* print friendly */
+@media print{body{background:#fff}.form-card,.sidebar{box-shadow:none}}
+
+/* Print-specific: hide the form and only keep the resume-frame for clean PDF output */
+@media print{
+  body *{visibility:hidden}
+  .resume-frame, .resume-frame *{visibility:visible}
+  .resume-frame{position:relative;left:0;top:0;width:100%;margin:0;padding:8mm}
+}
+
