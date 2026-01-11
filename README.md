@@ -28,7 +28,7 @@ Resume Maker is a straightforward web application designed to help users create 
    ```
 4. Start the development server:
    ```bash
-   npm start
+   node index.js
    ```
 5. Open your browser and go to `http://localhost:3000` to see the application in action.
 
