@@ -1,0 +1,28 @@
+/* layout.css — page grid, sidebar, preview and responsive rules */
+/* Desktop: preview (output) on the left, thin divider, form (input) on the right */
+.main{display:grid;grid-template-columns:1fr 1px var(--form-width);gap:var(--gap);align-items:start;min-height:520px}
+/* Mobile: collapse to single column and keep preview first */
+@media (max-width:980px){.main{grid-template-columns:1fr;gap:12px}}
+
+/* vertical divider */
+.vertical-line{width:1px;background:rgba(0,0,0,0.06);height:auto;margin:0;align-self:stretch}
+
+/* sidebar / preview */
+.preview{display:flex;gap:20px}
+.sidebar{background:linear-gradient(180deg,var(--primary), #08203b);color:#fff;border-radius:var(--radius);padding:24px;width:100%;min-width:240px}
+.sidebar h3{margin:0 0 12px;font-size:14px;letter-spacing:0.6px;color:#e6f7f6}
+.contact-row{display:flex;align-items:center;gap:10px;margin-bottom:10px;color:#eaf6f5}
+.contact-row i{width:18px}
+
+/* responsive tweaks */
+@media (max-width:480px){
+  /* On small screens stack: preview first, then form */
+  .sidebar{order:1;width:100%}
+  .card{order:2;width:100%}
+  .form-row{flex-direction:column}
+}
+
+/* containers used in the form */
+.container{position:static;padding:8px}
+.container1{display:flex;gap:12px;align-items:center;flex-wrap:wrap;width:100%}
+.container2{display:flex;flex-direction:column;gap:12px;width:100%}

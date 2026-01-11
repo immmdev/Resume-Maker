@@ -3,131 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>result</title>
+    <title>Resume Maker - Preview</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-      
 </head>
 <body>
-<div class="main">
-    <span id="resume">
+<div class="container-max"><div class="main">
+    <div id="resume" class="resume-frame-wrapper">
         
-        <div class="b1">
-            <div class="subd">
-                <h3>CONTACT</h3>
-                <div class="email">
-                    <i class="fa-solid fa-envelope ei"></i>
-                    <div class="des1">( YOUR EMAIL )</div>
+        <div class="b1 sidebar">
+            <div class="resume-frame">
+                <div class="resume-header">
+                    <div class="avatar" aria-hidden="true" id="avatar">JD</div>
+                    <div class="resume-profile">
+                        <h2 class="resume-name">Your Name</h2>
+                        <div class="resume-title" data-preview=".designation">Software Developer</div>
+                        <div class="contact-compact">
+                            <div class="contact-row"><i class="fa-solid fa-envelope"></i><span class="des1">( YOUR EMAIL )</span></div>
+                            <div class="contact-row"><i class="fa-solid fa-phone"></i><span class="des2">( YOUR PHONE )</span></div>
+                            <div class="contact-row"><i class="fa-solid fa-location-dot"></i><span class="des3">( YOUR ADDRESS )</span></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="ph">
-                    <i class="fa-solid fa-phone phone pi"></i>
-                    <div class="des2">( YOUR PHONE NO )</div>
-                </div>
-                <div class="location">
-                    <i class="fa-solid fa-location-dot loi"></i>
-                    <div class="des3">( YOUR ADDRESS )</div></div>
-                </div>
-                <div class="skills">
-                    <h3>SKILLS</h3>
-                    <ul  class="skillset">
 
-                        <!-- skills -->
-
-                    </ul>
-                </div>
-                <div class="sofware">
-                    <h3>SOFWARES</h3>
-                    <ul class="softwareset">
-                        
-                            <!-- Software set -->
-                        
-                    </ul>
-                </div>
-            </div>
+                <div class="resume-columns">
+                    <aside class="resume-left">
+                        <div class="section">
+                            <div class="section-title-compact">Skills</div>
+                            <ul class="skillset"></ul>
+                        </div>
+                        <div class="section" style="margin-top:12px">
+                            <div class="section-title-compact">Tools</div>
+                            <ul class="softwareset"></ul>
+                        </div>
+                    </aside>
             
         </div>
         
-        <div class="b2">
+        <div class="b2 card">
             <div class="minfo">
                 <div class="name">
-                    <h1 class="name1">Your Name</h2>
+                    <h1 class="name1 resume-name">Your Name</h1>
                 </div>
                 <div>
                     <p class="designation">SOFWARE DEVELOPER</p>
                     <p class="description">Brief description about yourjob</p>
                 </div>
-                <div class="perinfo">
-                    <p>PERSONAL INFORMATION</p>
+                <main class="resume-right">
+                    <div class="section">
+                        <div class="section-heading-resume"><span class="dot"></span><h4>Profile</h4></div>
+                        <p class="summary">Brief description about your job or profile.</p>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-heading-resume"><span class="dot"></span><h4>Experience</h4></div>
+                        <div class="timeline experienceset"></div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-heading-resume"><span class="dot"></span><h4>Education</h4></div>
+                        <div class="timeline qualificationset"></div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-heading-resume"><span class="dot"></span><h4>Personal</h4></div>
+                        <p class="perpara">Brief personal summary</p>
+                    </div>
+                </main>
                 </div>
-                <div>
-                    <p class="perpara">Brief description about your pesrsona</p>
-                </div>
-                    
-                
-                <div class="peredu">
-                    <p>EDUCATION</p>
-                </div>
-                <div class="interval">
-                    <ul class="qualificationset int">
-                        <!-- education -->
-                    </ul>
-                </div>
-                
-                
-                <div class="perworkex">
-                    <p>WORK EXPERIENCE</p>
-                    
-                </div> 
-                <div class="interval">
-                    <ul class="experienceset int">
-                        <!-- experience -->
-                    </ul>
-                </div>
-           </div>      
-        </div>
-    </span>
+            </div>
         <hr class="vertical-line">
         
-        <div class="data">
+        <div class="data form-card">
             <div class="header"> ENTER REQUIRED DETAILS</div>
             <div class="container">
+                <div class="form-width-control">
+                    <label for="form-width">Form width</label>
+                    <input id="form-width" type="range" min="280" max="420" value="320">
+                    <span id="form-width-val" class="small muted">320px</span>
+                </div>
                 <div class="container1">
                     
-                    <input type="text" class="data1" placeholder="Enter your name">
-                    <input type="number" class="data2" placeholder="Enter phone number">
+                    <input type="text" class="data1 input" placeholder="Enter your name" data-preview=".name1,.resume-name" aria-label="Full name">
+                    <input type="number" class="data2 input" placeholder="Enter phone number" data-preview=".des2" aria-label="Phone number">
                 </div>
 
                 <div class="container1">
-                    <input type="text" class="data3" placeholder="Enter address">
-                    <input type="text" class="data7" placeholder="Enter Email address">
+                    <input type="text" class="data3 input" placeholder="Enter address" data-preview=".des3" aria-label="Address">
+                    <input type="email" class="data7 input" placeholder="Enter Email address" data-preview=".des1" aria-label="Email address">
                     
                     
                 </div>
                 <div class="container1">
-                    <input type="text" class="data8" placeholder="eg : (2010-15) Cisco as SDE1">
-                    <button type="submit" id="expbtn">+Experience</button>
-                    <input type="text" class="data6" placeholder="eg : (2001-2002) highschool from CMS">
-                    <button type="submit" id="qualificationbtn">+Qualification</button>
+                    <input type="text" class="data8 input" placeholder="eg : (2010-15) Cisco as SDE1">
+                    <button type="button" id="expbtn" class="btn small ghost" data-list-target=".experienceset" data-list-input=".data8" aria-label="Add experience">+Experience</button>
+                    <input type="text" class="data6 input" placeholder="eg : (2001-2002) highschool from CMS">
+                    <button type="button" id="qualificationbtn" class="btn small ghost" data-list-target=".qualificationset" data-list-input=".data6" aria-label="Add qualification">+Qualification</button>
                 </div>
                 <div class="container1">
                     
-                    <input type="text" class="data4" placeholder="Enter skill">
-                    <button type="submit" id="skillbtn">+Skill</button>
-                    <input type="text" class="data5" placeholder="Enter sofware you know">
-                    <button type="submit" id="softwarebtn">+Sofware</button>
+                    <input type="text" class="data4 input" placeholder="Enter skill">
+                    <button type="button" id="skillbtn" class="btn small ghost" data-list-target=".skillset" data-list-input=".data4" aria-label="Add skill">+Skill</button>
+                    <input type="text" class="data5 input" placeholder="Enter software you know">
+                    <button type="button" id="softwarebtn" class="btn small ghost" data-list-target=".softwareset" data-list-input=".data5" aria-label="Add software">+Software</button>
                     
                 </div>
                 <div class="container2">
-                    <textarea id="jobdescription">"Your brief job description"</textarea>
-                    <textarea id="personaldescription">"Your brief pesonality description"</textarea>
+                    <textarea id="jobdescription" data-preview=".description" aria-label="Job description">Your brief job description</textarea>
+                    <textarea id="personaldescription" data-preview=".perpara" aria-label="Personal description">Your brief personality description</textarea>
                 </div>
-                <div class="conatiner3">
-                    <input type="file"  class="imgfile" placeholder="Choose Image">
-                    <input type="text" class="desig" placeholder="Job Title">
+                <div class="conatiner3" style="display:flex;gap:12px;align-items:flex-start">
+                    <div style="min-width:160px">
+                        <input type="file" id="imgfile" class="imgfile" accept="image/*" aria-label="Upload photo (jpg, png)">
+                        <div class="img-actions" style="margin-top:6px">
+                            <button type="button" id="remove-img" class="btn small ghost" style="display:none">Remove</button>
+                            <div class="img-note small muted" style="margin-left:6px">Your photo will be embedded in the final result and print.</div>
+                        </div>
+                        <div class="img-error small muted" id="img-error" aria-live="polite" style="display:none;margin-top:6px"></div>
+                    </div>
+                    <div style="flex:1">
+                        <input type="text" class="desig input" placeholder="Job Title" data-preview=".designation" aria-label="Job title">
+                    </div>
                 </div>
-                <button type="submit" id="finalsubmit">Final Submit</button>
-            </div>
-
+                <button type="submit" id="finalsubmit" class="btn primary">Final Submit</button>
+                    <div style="margin-top:12px;display:flex;gap:8px;align-items:center">
+                        <button type="button" id="download-pdf" class="btn ghost" title="Download only the resume preview as a PDF">Download Resume (PDF)</button>
+                        <small class="muted">Tip: Use Chrome's "Save as PDF" when printing for best results.</small>
+                    </div>
+             </div>
             <div class="footer">
                 <ul>
                     <li>Fill the information carefully.</li>
@@ -136,6 +140,7 @@
             </div>   
         </div>
 
+</div>
 </div>
 <script src="/app.js"></script>
 </body>
